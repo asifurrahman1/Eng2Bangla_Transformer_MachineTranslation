@@ -1,0 +1,9 @@
+torch==2.2.2
+torchvision==0.17.2
+torchtext==0.17.2
+torchdata==0.7.1
+nltk==3.8.1
+numpy==1.26.4
+matplotlib==3.8.3
+tqdm==4.66.2
+indic-nlp-library
