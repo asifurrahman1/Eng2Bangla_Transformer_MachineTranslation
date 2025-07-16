@@ -5,7 +5,6 @@ A TensorFlow-based Transformer model for English to Bengali machine translation.
 ---
 
 ## 📦 Installation
-
 Clone the repository and install the package using `setup.py`. This will automatically install all dependencies from `requirement.txt`.
 
 ```bash
