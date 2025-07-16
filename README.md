@@ -87,5 +87,4 @@ Feel free to reach out or open an issue for improvements, collaborations, or res
 
 ---
 
-###  ⭐ If you find this project helpful, consider giving it a star!
-Let me know if you'd like to add CI/CD instructions, demo GIFs, model evalu
+⭐ If you find this project helpful, consider giving it a star!
