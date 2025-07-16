@@ -20,11 +20,17 @@ pip install -e .
 
 ## 🧠 Project Features
 ✅ Transformer encoder-decoder implementation using TensorFlow 2.x
+
 ✅ Modular tokenizer support with BaseTokenizer class
+
 ✅ Bengali tokenization using Indic NLP Library
+
 ✅ Custom positional encoding and attention masks
+
 ✅ Greedy decoding for inference
+
 ✅ Easily extendable to other language pairs and datasets
+
 ✅ Training and testing entry points via console commands
 
 ---
