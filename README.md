@@ -22,7 +22,9 @@ pip install -e
 ✅ Greedy decoding for inference
 ✅ Easily extendable to other language pairs and datasets
 ✅ Training and testing entry points via console commands
+
 ---
+
 ## 🗂️ Directory Structure
 EngToBengaliTranslation/
 ├── Dataset/
@@ -39,7 +41,9 @@ EngToBengaliTranslation/
 ├── README.md                             # Project documentation
 ├── requirement.txt                       # Python package dependencies
 └── setup.py
+
 ---
+
 ## 🚀 Getting Started
 ### Train the Model
 Use the console script installed via setup.py:
@@ -61,7 +65,9 @@ This repository is not limited to English–Bengali. You can adapt it for any la
         # Your custom logic
     def target_tokenizer(self, text):
         # Your custom logic
+
 ---
+
 👤 Author
 Md Asifur Rahman
 Feel free to reach out or open an issue for improvements, collaborations, or research inquiries.
