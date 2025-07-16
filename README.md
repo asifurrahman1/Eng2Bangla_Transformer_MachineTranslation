@@ -15,7 +15,10 @@ pip install .
 For editable development mode:
 pip install -e .
 ```
-🧠 Project Features
+
+---
+
+## 🧠 Project Features
 ✅ Transformer encoder-decoder implementation using TensorFlow 2.x
 ✅ Modular tokenizer support with BaseTokenizer class
 ✅ Bengali tokenization using Indic NLP Library
@@ -24,11 +27,13 @@ pip install -e .
 ✅ Easily extendable to other language pairs and datasets
 ✅ Training and testing entry points via console commands
 
-🗂️ Directory Structure
+---
+
+## 🗂️ Directory Structure
 ```
 EngToBengaliTranslation/
 ├── Dataset/
-│   └── english_to_bangla.csv             # Translation corpus 
+│   └── english_to_bangla.csv             # Translation dataset 
 ├── EngToBengaliTranslation/
 │   ├── basetokenizer.py                  # Default tokenizer class
 │   ├── data_pipeline.py                  # Data preparation as dataloader
@@ -43,57 +48,44 @@ EngToBengaliTranslation/
 └── setup.py                              # Package definition
 ```
 
-🚀 Getting Started
-Train the Model
-Use the console script installed via setup.py:
+---
 
-bash
-Copy
-Edit
+## 🚀 Getting Started
+### Train the Model
+Use the console script installed via setup.py:
+```
 train-model
 Or run directly:
-
-bash
-Copy
-Edit
 python -m EngToBengaliTranslation.train
-Test / Translate
-bash
-Copy
-Edit
+```
+### Test / Translate
+```
 test-model
 Or run directly:
-
-bash
-Copy
-Edit
 python -m EngToBengaliTranslation.test
-🔁 Extending to Other Language Pairs
+```
+
+### 🔁 Extending to Other Language Pairs
 This repository is not limited to English–Bengali. You can adapt it for any language pair by following these steps:
-
-Prepare a parallel dataset in Dataset/, with two columns: source and target.
-
-Implement a custom tokenizer by subclassing BaseTokenizer:
-
-python
-Copy
-Edit
+- Prepare a dataset in 'Dataset/', with two columns: source and target.
+- Implement a custom tokenizer by subclassing BaseTokenizer:
+```
 class CustomTokenizer(BaseTokenizer):
     def src_tokenizer(self, text):
         # Your source language tokenization logic
 
     def target_tokenizer(self, text):
         # Your target language tokenization logic
-Update data_pipeline.py to use the new tokenizer and dataset.
+```
+- Update data_pipeline.py to use the new tokenizer and dataset.
 
-👤 Author
+---
+
+## 👤 Author
 Md Asifur Rahman
 Feel free to reach out or open an issue for improvements, collaborations, or research inquiries.
 
-⭐ If you find this project helpful, consider giving it a star!
+---
 
-vbnet
-Copy
-Edit
-
+###  ⭐ If you find this project helpful, consider giving it a star!
 Let me know if you'd like to add CI/CD instructions, demo GIFs, model evalu
