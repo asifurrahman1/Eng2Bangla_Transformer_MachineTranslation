@@ -1,20 +1,21 @@
 # EngToBengaliTranslation
 
-A TensorFlow-based Transformer model for English to Bengali machine translation. This project is modular and extensible—allowing any machine translation task between arbitrary language pairs with appropriate dataset and tokenizer definitions.
+A TensorFlow-based Transformer model for English to Bengali machine translation. This project is modular and extensible—allowing any machine translation task between arbitrary language pairs by defining an appropriate dataset and tokenizer.
 
 ---
 
 ## 📦 Installation
+
 Clone the repository and install the package using `setup.py`. This will automatically install all dependencies from `requirement.txt`.
 
 ```bash
 git clone https://github.com/<your-username>/EngToBengaliTranslation.git
 cd EngToBengaliTranslation
 pip install .
-or 
-pip install -e
-
-## 🧠 Project Features
+For editable development mode:
+pip install -e .
+```
+🧠 Project Features
 ✅ Transformer encoder-decoder implementation using TensorFlow 2.x
 ✅ Modular tokenizer support with BaseTokenizer class
 ✅ Bengali tokenization using Indic NLP Library
@@ -23,14 +24,13 @@ pip install -e
 ✅ Easily extendable to other language pairs and datasets
 ✅ Training and testing entry points via console commands
 
----
-
-## 🗂️ Directory Structure
+🗂️ Directory Structure
+```
 EngToBengaliTranslation/
 ├── Dataset/
 │   └── english_to_bangla.csv             # Translation corpus 
 ├── EngToBengaliTranslation/
-│   ├── basetokenizer.py                  # default tokenizer class
+│   ├── basetokenizer.py                  # Default tokenizer class
 │   ├── data_pipeline.py                  # Data preparation as dataloader
 │   ├── model.py                          # Transformer architecture
 │   ├── model_struct.json                 # Model config (optional use)
@@ -40,37 +40,60 @@ EngToBengaliTranslation/
 ├── LICENSE                               # MIT License
 ├── README.md                             # Project documentation
 ├── requirement.txt                       # Python package dependencies
-└── setup.py
+└── setup.py                              # Package definition
 
----
 
-## 🚀 Getting Started
-### Train the Model
+🚀 Getting Started
+Train the Model
 Use the console script installed via setup.py:
+
+bash
+Copy
+Edit
 train-model
-Or directly run:
+Or run directly:
+
+bash
+Copy
+Edit
 python -m EngToBengaliTranslation.train
-
-### Test / Translate
+Test / Translate
+bash
+Copy
+Edit
 test-model
-Or directly run:
+Or run directly:
+
+bash
+Copy
+Edit
 python -m EngToBengaliTranslation.test
-
-## 🔁 Extending to Other Language Pairs
+🔁 Extending to Other Language Pairs
 This repository is not limited to English–Bengali. You can adapt it for any language pair by following these steps:
-- Prepare a dataset in Dataset, with two columns: source and target.
-- Implement a custom tokenizer by subclassing BaseTokenizer:
-  class CustomTokenizer(BaseTokenizer):
-    def src_tokenizer(self, text):
-        # Your custom logic
-    def target_tokenizer(self, text):
-        # Your custom logic
 
----
+Prepare a parallel dataset in Dataset/, with two columns: source and target.
+
+Implement a custom tokenizer by subclassing BaseTokenizer:
+
+python
+Copy
+Edit
+class CustomTokenizer(BaseTokenizer):
+    def src_tokenizer(self, text):
+        # Your source language tokenization logic
+
+    def target_tokenizer(self, text):
+        # Your target language tokenization logic
+Update data_pipeline.py to use the new tokenizer and dataset.
 
 👤 Author
 Md Asifur Rahman
 Feel free to reach out or open an issue for improvements, collaborations, or research inquiries.
 
+⭐ If you find this project helpful, consider giving it a star!
 
+vbnet
+Copy
+Edit
 
+Let me know if you'd like to add CI/CD instructions, demo GIFs, model evalu
