@@ -41,7 +41,7 @@ EngToBengaliTranslation/
 ├── README.md                             # Project documentation
 ├── requirement.txt                       # Python package dependencies
 └── setup.py                              # Package definition
-
+```
 
 🚀 Getting Started
 Train the Model
